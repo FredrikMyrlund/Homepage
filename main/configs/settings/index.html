@@ -1128,6 +1128,19 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#status-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Status Style
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#hide-widget-error-messages" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5185,6 +5198,19 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#status-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Status Style
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#hide-widget-error-messages" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5452,16 +5478,32 @@ More information about prefixed icons can be found in <a href="../services/#icon
 </span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">showStats</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </span></code></pre></div>
 <p>If you have both set the per-service settings take precedence.</p>
-<h2 id="hide-widget-error-messages">Hide Widget Error Messages</h2>
-<p>Hide the visible API error messages either globally in <code>settings.yaml</code>:</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="nt">hideErrors</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<h2 id="status-style">Status Style</h2>
+<p>You can choose from the following styles for docker or k8s status and ping: <code>dot</code> or <code>basic</code></p>
+<ul>
+<li>The default is no value, and displays the ping response time in ms and the docker / k8s container status</li>
+<li><code>dot</code> shows a green dot for a successful ping or healthy status.</li>
+<li><code>basic</code> shows either UP or DOWN for ping</li>
+</ul>
+<p>For example:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="nt">statusStyle</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;dot&#39;</span>
 </span></code></pre></div>
-<p>or per service widget (<code>services.yaml</code>) with:</p>
+<p>or per-service (<code>services.yaml</code>) with:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Example Service</span><span class="p">:</span>
 </span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span>
-</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">widget</span><span class="p p-Indicator">:</span>
-</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span>
-</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">hideErrors</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">statusStyle</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&#39;dot&#39;</span>
+</span></code></pre></div>
+<p>If you have both set, the per-service settings take precedence.</p>
+<h2 id="hide-widget-error-messages">Hide Widget Error Messages</h2>
+<p>Hide the visible API error messages either globally in <code>settings.yaml</code>:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="nt">hideErrors</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span></code></pre></div>
+<p>or per service widget (<code>services.yaml</code>) with:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Example Service</span><span class="p">:</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">widget</span><span class="p p-Indicator">:</span>
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a><span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">hideErrors</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </span></code></pre></div>
 <p>If either value is set to true, the errror message will be hidden.</p>
 
