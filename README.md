@@ -16,7 +16,7 @@
 <p align="center">
   <a href="https://github.com/gethomepage/homepage/actions/workflows/docker-publish.yml"><img alt="GitHub Workflow Status (with event)" src="https://img.shields.io/github/actions/workflow/status/gethomepage/homepage/docker-publish.yml"></a>
   &nbsp;
-  <a href="https://hosted.weblate.org/engage/homepage/"><img src="https://hosted.weblate.org/widgets/homepage/-/homepage/svg-badge.svg" alt="Weblate"></a>
+  <a title="Crowdin" target="_blank" href="https://crowdin.com/project/gethomepage"><img src="https://badges.crowdin.net/gethomepage/localized.svg"></a>
   &nbsp;
   <a href="https://discord.gg/k4ruYNrudu"><img alt="Discord" src="https://img.shields.io/discord/1019316731635834932"></a>
   &nbsp;
