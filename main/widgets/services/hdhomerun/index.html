@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="ruTorrent Widget Configuration">
+        <meta name="description" content="HDHomerun Widget Configuration">
       
       
       
-        <link rel="canonical" href="https://gethomepage.dev/main/widgets/services/rutorrent/">
+        <link rel="canonical" href="https://gethomepage.dev/main/widgets/services/hdhomerun/">
       
       
-        <link rel="prev" href="../readarr/">
+        <link rel="prev" href="../grafana/">
       
       
-        <link rel="next" href="../sabnzbd/">
+        <link rel="next" href="../healthchecks/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>ruTorrent - homepage</title>
+        <title>HDHomerun - homepage</title>
       
     
     
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ruTorrent
+              HDHomerun
             
           </span>
         </div>
@@ -2011,9 +2011,16 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../hdhomerun/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -2028,6 +2035,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -3363,16 +3371,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../rutorrent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3387,7 +3388,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -4524,7 +4524,7 @@
                   
 
   
-    <a href="https://github.com/gethomepage/homepage/tree/main/docs/widgets/services/rutorrent.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/gethomepage/homepage/tree/main/docs/widgets/services/hdhomerun.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -4532,15 +4532,12 @@
   
 
 
-  <h1>ruTorrent</h1>
+  <h1>HDHomerun</h1>
 
-<p>This requires the <code>httprpc</code> plugin to be installed and enabled, and is part of the default ruTorrent plugins. If you have not explicitly removed or disable this plugin, it should be available.</p>
-<p>Allowed fields: <code>["active", "upload", "download"]</code>.</p>
+<p>Allowed fields: <code>["channels", "hd"]</code>.</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">widget</span><span class="p">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rutorrent</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://rutorrent.host.or.ip</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">username</span><span class="w"> </span><span class="c1"># optional, false if not used</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">password</span><span class="w"> </span><span class="c1"># optional, false if not used</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hdhomerun</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://hdhomerun.host.or.ip</span>
 </span></code></pre></div>
 
   
