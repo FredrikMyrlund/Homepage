@@ -4663,46 +4663,37 @@
 <li>In the UNRAID webGUI, go to the <strong>Apps</strong> tab.</li>
 <li>In the search bar, search for <code>homepage</code>.</li>
 <li>Click on <strong>Install</strong>.</li>
-<li>Change the parameters to your liking.<ul>
+<li>Change the parameters to your liking.</li>
 <li>Click on <strong>APPLY</strong>.</li>
-</ul>
-</li>
 </ul>
 <h2 id="run-the-container">Run the Container</h2>
 <ul>
-<li>While the container is running, open the WebUI.<ul>
+<li>While the container is running, open the WebUI.</li>
 <li>Opening the page will generate the configuration files.</li>
-</ul>
-</li>
 </ul>
 <p>You may need to set the permissions of the folders to be able to edit the files.</p>
 <ul>
 <li>Click on the Homepage icon.</li>
-<li>Click on <strong>Console</strong>.<ul>
+<li>Click on <strong>Console</strong>.</li>
 <li>Enter <code>chmod -R u-x,go-rwx,go+u,ugo+X /app/config</code> and press <strong>Enter</strong>.</li>
 <li>Enter <code>chmod -R u-x,go-rwx,go+u,ugo+X /app/public/icons</code> and press <strong>Enter</strong>.</li>
 <li>Enter <code>chown -R nobody:users /app/config</code> and press <strong>Enter</strong>.</li>
 <li>Enter <code>chown -R nobody:users /app/public/icons</code> and press <strong>Enter</strong>.</li>
 </ul>
-</li>
-</ul>
 <h2 id="some-other-notes">Some Other Notes</h2>
 <ul>
-<li>
-<p>To use the <a href="../../configs/docker/">Docker integration</a>, you only need to use the <code>container:</code> parameter. There is no need to set the server.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>To view detailed container statistics (CPU, RAM, etc.), or if you use a remote docker socket, <code>container:</code> will still need to be set. For example:</p>
-</div>
+<li>To use the <a href="../../configs/docker/">Docker integration</a>, you only need to use the <code>container:</code> parameter. There is no need to set the server.</li>
+</ul>
+<p>!!! note</p>
+<div class="language-text highlight"><pre><span></span><code>    To view detailed container statistics (CPU, RAM, etc.), or if you use a remote docker socket, `container:` will still need to be set. For example:
+</code></pre></div>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    - Plex:
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>        icon: /icons/plex.png
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        href: https://app.plex.com
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        container: plex
 </span></code></pre></div>
-</li>
-<li>
-<p>When you upload a new image into the <strong>/images</strong> folder, you will need to restart the container for it to show up in the WebUI. Please see the <a href="../../configs/services/#icons">service icons</a> for more information.</p>
-</li>
+<ul>
+<li>When you upload a new image into the <strong>/images</strong> folder, you will need to restart the container for it to show up in the WebUI. Please see the <a href="../../configs/services/#icons">service icons</a> for more information.</li>
 </ul>
 
   

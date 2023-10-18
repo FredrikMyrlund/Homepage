@@ -4542,20 +4542,16 @@
 <li>Click the Create button</li>
 <li>Name the group something informative, like api-ro-users</li>
 <li>Click on the Permissions "folder"</li>
-<li>Click Add -&gt; Group Permission<ul>
+<li>Click Add -&gt; Group Permission</li>
 <li>Path: /</li>
 <li>Group: group from bullet 4 above</li>
 <li>Role: PVEAuditor</li>
 <li>Propagate: Checked</li>
-</ul>
-</li>
 <li>Expand Permissions, click on Users</li>
-<li>Click the Add button<ul>
+<li>Click the Add button</li>
 <li>User name: something informative like <code>api</code></li>
 <li>Realm: Linux PAM standard authentication</li>
 <li>Group: group from bullet 4 above</li>
-</ul>
-</li>
 <li>Expand Permissions, click on API Tokens</li>
 <li>Click the Add button<ul>
 <li>User: user from bullet 8 above</li>
@@ -4576,11 +4572,11 @@
 <p>Allowed fields: <code>["vms", "lxc", "resources.cpu", "resources.mem"]</code>.</p>
 <p>You can set the optional <code>node</code> setting when you want to show metrics for a single node. By default it will show the average for the complete cluster.</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">widget</span><span class="p">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">proxmox</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://proxmox.host.or.ip:8006</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">api_token_id</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">api_token_secret</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">node</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pve-1</span><span class="w"> </span><span class="c1"># optional</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">proxmox</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://proxmox.host.or.ip:8006</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">api_token_id</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">api_token_secret</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">node</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pve-1</span><span class="w"> </span><span class="c1"># optional</span>
 </span></code></pre></div>
 
   
