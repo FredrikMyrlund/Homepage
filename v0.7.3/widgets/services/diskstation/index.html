@@ -4544,22 +4544,20 @@
 <li>Under the <code>User Groups</code> tab of the user config dialogue check the box for <code>Administrators</code>.</li>
 <li>On the <code>Permissions</code> tab check the top box for <code>No Access</code>, effectively prohibiting the user from accessing anything in the shared folders.</li>
 <li>Under <code>Applications</code> check the box next to <code>Deny</code> in the header to explicitly prohibit login to all applications.</li>
-<li>Now <em>only</em> allow login to the <code>Download Station</code> application, either by<ul>
+<li>Now <em>only</em> allow login to the <code>Download Station</code> application, either by</li>
 <li>unchecking <code>Deny</code> in the respective row, or (if inheriting permission doesn't work because of other group settings)</li>
 <li>checking <code>Allow</code> for this app, or</li>
 <li>checking <code>By IP</code> for this app to limit the source of login attempts to one or more IP addresses/subnets.</li>
-</ul>
-</li>
 <li>When the <code>Preview</code> column shows <code>Allow</code> in the <code>Download Station</code> row, click <code>Save</code>.</li>
 </ol>
 <p>Now configure the widget with the correct login information and test it.</p>
 <p>If you encounter issues during testing, make sure to uncheck the option for automatic blocking due to invalid logins under <code>Control Panel &gt; Security &gt; Protection</code>. If desired, this setting can be reactivated once the login is established working.</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">widget</span><span class="p">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">diskstation</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://diskstation.host.or.ip:port</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">username</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">password</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">volume</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">volume_N</span><span class="w"> </span><span class="c1"># optional</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">diskstation</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://diskstation.host.or.ip:port</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">username</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">password</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">volume</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">volume_N</span><span class="w"> </span><span class="c1"># optional</span>
 </span></code></pre></div>
 
   
