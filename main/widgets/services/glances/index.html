@@ -4643,7 +4643,7 @@
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pass</span><span class="w"> </span><span class="c1"># optional if auth enabled in Glances</span>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">metric</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cpu</span>
 </span></code></pre></div>
-<p><em>Please note, this widget does not need an <code>href</code>, <code>icon</code> or <code>description</code> on its parent service. To achive the same effect as the examples above, see as an example:</em></p>
+<p><em>Please note, this widget does not need an <code>href</code>, <code>icon</code> or <code>description</code> on its parent service. To achieve the same effect as the examples above, see as an example:</em></p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">CPU Usage</span><span class="p">:</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nt">widget</span><span class="p">:</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">glances</span>
@@ -4661,15 +4661,15 @@
 <p><code>cpu</code>: CPU usage. Shows how much of the system's computational resources are currently being used.</p>
 <p><code>memory</code>: Memory usage. Shows how much of the system's RAM is currently being used.</p>
 <p><code>process</code>: Top 5 processes based on CPU usage. Gives an overview of which processes are consuming the most resources.</p>
-<p><code>network:&lt;interface_name&gt;</code>: Network data usage for the specified interface. Replace <code>&lt;interface_name&gt;</code> with the name of your network interface, e.g., <code>network:enp0s25</code>, as specificed in glances.</p>
-<p><code>sensor:&lt;sensor_id&gt;</code>: Temperature of the specified sensor, typically used to monitor CPU temperature. Replace <code>&lt;sensor_id&gt;</code> with the name of your sensor, e.g., <code>sensor:Package id 0</code> as specificed in glances.</p>
-<p><code>disk:&lt;disk_id&gt;</code>: Disk I/O data for the specified disk. Replace <code>&lt;disk_id&gt;</code> with the id of your disk, e.g., <code>disk:sdb</code>, as specificed in glances.</p>
-<p><code>gpu:&lt;gpu_id&gt;</code>: GPU usage for the specified GPU. Replace <code>&lt;gpu_id&gt;</code> with the id of your GPU, e.g., <code>gpu:0</code>, as specificed in glances.</p>
-<p><code>fs:&lt;mnt_point&gt;</code>: Disk usage for the specified mount point. Replace <code>&lt;mnt_point&gt;</code> with the path of your disk, e.g., <code>/mnt/storage</code>, as specificed in glances.</p>
+<p><code>network:&lt;interface_name&gt;</code>: Network data usage for the specified interface. Replace <code>&lt;interface_name&gt;</code> with the name of your network interface, e.g., <code>network:enp0s25</code>, as specified in glances.</p>
+<p><code>sensor:&lt;sensor_id&gt;</code>: Temperature of the specified sensor, typically used to monitor CPU temperature. Replace <code>&lt;sensor_id&gt;</code> with the name of your sensor, e.g., <code>sensor:Package id 0</code> as specified in glances.</p>
+<p><code>disk:&lt;disk_id&gt;</code>: Disk I/O data for the specified disk. Replace <code>&lt;disk_id&gt;</code> with the id of your disk, e.g., <code>disk:sdb</code>, as specified in glances.</p>
+<p><code>gpu:&lt;gpu_id&gt;</code>: GPU usage for the specified GPU. Replace <code>&lt;gpu_id&gt;</code> with the id of your GPU, e.g., <code>gpu:0</code>, as specified in glances.</p>
+<p><code>fs:&lt;mnt_point&gt;</code>: Disk usage for the specified mount point. Replace <code>&lt;mnt_point&gt;</code> with the path of your disk, e.g., <code>/mnt/storage</code>, as specified in glances.</p>
 <h2 id="views">Views</h2>
 <p>All widgets offer an alternative to the full or "graph" view, which is the compact, or "graphless" view.</p>
 <p><img width="970" alt="Screenshot 2023-09-06 at 1 51 48 PM" src="https://github-production-user-asset-6210df.s3.amazonaws.com/82196/265985295-cc6b9adc-4218-4274-96ca-36c3e64de5d0.png"></p>
-<p>To switch to the alternative "graphless" view, simply passs <code>chart: false</code> as an option to the widget, like so:</p>
+<p>To switch to the alternative "graphless" view, simply pass <code>chart: false</code> as an option to the widget, like so:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Network Usage</span><span class="p">:</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="nt">widget</span><span class="p">:</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">glances</span>
