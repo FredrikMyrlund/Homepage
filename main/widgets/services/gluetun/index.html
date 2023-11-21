@@ -4562,11 +4562,14 @@
 
   <h1>Gluetun</h1>
 
-<p>Requires <a href="https://github.com/qdm12/gluetun-wiki/blob/main/setup/advanced/control-server.md">HTTP control server options</a> to be enabled.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Requires <a href="https://github.com/qdm12/gluetun-wiki/blob/main/setup/advanced/control-server.md">HTTP control server options</a> to be enabled. By default this runs on port <code>8000</code>.</p>
+</div>
 <p>Allowed fields: <code>["public_ip", "region", "country"]</code>.</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">widget</span><span class="p">:</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gluetun</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://gluetun.host.or.ip</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://gluetun.host.or.ip:port</span>
 </span></code></pre></div>
 
   
