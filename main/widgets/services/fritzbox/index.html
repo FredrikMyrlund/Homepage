@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="PiHole Widget Configuration">
+        <meta name="description" content="FRITZ!Box Widget Configuration">
       
       
       
-        <link rel="canonical" href="https://gethomepage.dev/main/widgets/services/pihole/">
+        <link rel="canonical" href="https://gethomepage.dev/main/widgets/services/fritzbox/">
       
       
-        <link rel="prev" href="../pialert/">
+        <link rel="prev" href="../freshrss/">
       
       
-        <link rel="next" href="../plex-tautulli/">
+        <link rel="next" href="../gamedig/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>PiHole - homepage</title>
+        <title>FRITZ!Box - homepage</title>
       
     
     
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PiHole
+              FRITZ!Box
             
           </span>
         </div>
@@ -1859,9 +1859,16 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../fritzbox/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1876,6 +1883,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -3055,16 +3063,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../pihole/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3079,7 +3080,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -4580,7 +4580,7 @@
                   
 
   
-    <a href="https://github.com/gethomepage/homepage/tree/main/docs/widgets/services/pihole.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/gethomepage/homepage/tree/main/docs/widgets/services/fritzbox.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -4588,16 +4588,19 @@
   
 
 
-  <h1>PiHole</h1>
+  <h1>FRITZ!Box</h1>
 
-<p>As of v2022.12 <a href="https://pi-hole.net/blog/2022/11/17/upcoming-changes-authentication-for-more-api-endpoints-required/#page-content">PiHole requires the use of an API key</a> if an admin password is set. Older versions do not require any authentication even if the admin uses a password.</p>
-<p>Allowed fields: <code>["queries", "blocked", "blocked_percent", "gravity"]</code>.</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">widget</span><span class="p">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pihole</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://pi.hole.or.ip</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">yourpiholeapikey</span><span class="w"> </span><span class="c1"># optional</span>
+<p>Application access &amp; UPnP must be activated on your device:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Home Network &gt; Network &gt; Network Settings &gt; Access Settings in the Home Network
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>[x] Allow access for applications
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>[x] Transmit status information over UPnP
 </span></code></pre></div>
-<p><em>Added in v0.1.0, updated in v0.6.18</em></p>
+<p>You don't need to provide any credentials.</p>
+<p>Allowed fields (limited to a max of 4): <code>["connectionStatus", "upTime", "maxDown", "maxUp", "down", "up", "received", "sent", "externalIPAddress"]</code>.</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">widget</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fritzbox</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://192.168.178.1</span>
+</span></code></pre></div>
 
   
   
