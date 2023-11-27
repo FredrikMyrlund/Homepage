@@ -4557,6 +4557,19 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#new-feature-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          New Feature Guidelines
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#service-widget-guidelines" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4701,6 +4714,19 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#new-feature-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          New Feature Guidelines
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#service-widget-guidelines" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4757,10 +4783,15 @@
 <p>To ensure a consistent style and formatting across the project source, the project utilizes Git <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks"><code>pre-commit</code></a> hooks to perform some formatting and linting before a commit is allowed.</p>
 <p>Once installed, hooks will run when you commit. If the formatting isn't quite right, the commit will be rejected and you'll need to look at the output and fix the issue. Most hooks will automatically format failing files, so all you need to do is <code>git add</code> those files again and retry your commit.</p>
 <p>See the <a href="https://pre-commit.com/#install">pre-commit documentation</a> to get started.</p>
+<h2 id="new-feature-guidelines">New Feature Guidelines</h2>
+<ul>
+<li>New features should be linked to an existing feature request with at least 5 'up-votes'. The purpose of this requirement is to avoid the addition (and maintenance) of features that might only benefit a small number of users.</li>
+<li>If you have ideas for a larger feature, please open a discussion first.</li>
+</ul>
 <h2 id="service-widget-guidelines">Service Widget Guidelines</h2>
 <p>To ensure cohesiveness of various widgets, the following should be used as a guide for developing new widgets:</p>
 <ul>
-<li>Please only submit widgets that have been requested and have at least 5 'up-votes'</li>
+<li>Please only submit widgets that have been requested and have at least 5 'up-votes'. The purpose of this requirement is to avoid the addition (and maintenance) of service widgets that might only benefit a small number of users.</li>
 <li>Widgets should be only one row of blocks</li>
 <li>Widgets should be no more than 4 blocks wide</li>
 <li>Minimize the number of API calls</li>
