@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Tautulli Widget Configuration">
+        <meta name="description" content="PeaNUT Widget Configuration">
       
       
       
-        <link rel="canonical" href="https://gethomepage.dev/main/widgets/services/plex-tautulli/">
+        <link rel="canonical" href="https://gethomepage.dev/main/widgets/services/peanut/">
       
       
-        <link rel="prev" href="../pihole/">
+        <link rel="prev" href="../paperlessngx/">
       
       
-        <link rel="next" href="../plex/">
+        <link rel="next" href="../pfsense/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Tautulli (Plex) - homepage</title>
+        <title>PeaNUT - homepage</title>
       
     
     
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tautulli (Plex)
+              PeaNUT
             
           </span>
         </div>
@@ -2979,9 +2979,16 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../peanut/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -2996,6 +3003,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -3109,16 +3117,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../plex-tautulli/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3133,7 +3134,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -4608,7 +4608,7 @@
                   
 
   
-    <a href="https://github.com/gethomepage/homepage/tree/main/docs/widgets/services/plex-tautulli.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/gethomepage/homepage/tree/main/docs/widgets/services/peanut.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -4616,14 +4616,19 @@
   
 
 
-  <h1>Tautulli (Plex)</h1>
+  <h1>PeaNUT</h1>
 
-<p>Provides detailed information about currently active streams. You can find the API key from inside Tautulli at <code>Settings &gt; Web Interface &gt; API</code>.</p>
-<p>Allowed fields: no configurable fields for this widget.</p>
+<p>This widget adds support for <a href="https://networkupstools.org/">Network UPS Tools</a> via a third party tool, <a href="https://github.com/Brandawg93/PeaNUT">PeaNUT</a>.</p>
+<p>The default ups name is <code>ups</code>. To configure more than one ups, you must create multiple peanut services.</p>
+<p>Allowed fields: <code>["battery_charge", "ups_load", "ups_status"]</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This widget requires an additional tool, <a href="https://github.com/Brandawg93/PeaNUT">PeaNUT</a>, as noted. Other projects exist to achieve similar results using a <code>customapi</code> widget, for example <a href="https://github.com/ArthurMitchell42/nutcase#using-nutcase-homepage">NUTCase</a>.</p>
+</div>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">widget</span><span class="p">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tautulli</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://tautulli.host.or.ip</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apikeyapikeyapikeyapikeyapikey</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">peanut</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://peanut.host.or.ip:port</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nameofyourups</span>
 </span></code></pre></div>
 
   

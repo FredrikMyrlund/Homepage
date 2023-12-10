@@ -501,6 +501,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://gethomepage.dev/main/widgets/services/peanut/</loc>
+         <lastmod>2023-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://gethomepage.dev/main/widgets/services/pfsense/</loc>
          <lastmod>2023-12-10</lastmod>
          <changefreq>daily</changefreq>
