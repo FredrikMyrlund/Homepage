@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Gotify Widget Configuration">
+        <meta name="description" content="Netdata Widget Configuration">
       
       
       
-        <link rel="canonical" href="https://gethomepage.dev/main/widgets/services/gotify/">
+        <link rel="canonical" href="https://gethomepage.dev/main/widgets/services/netdata/">
       
       
-        <link rel="prev" href="../gluetun/">
+        <link rel="prev" href="../navidrome/">
       
       
-        <link rel="next" href="../grafana/">
+        <link rel="next" href="../nextcloud/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Gotify - homepage</title>
+        <title>Netdata - homepage</title>
       
     
     
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gotify
+              Netdata
             
           </span>
         </div>
@@ -2037,17 +2037,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../gotify/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2062,7 +2055,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -2747,10 +2739,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../netdata/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -2765,6 +2764,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -4775,7 +4775,7 @@
                   
 
   
-    <a href="https://github.com/gethomepage/homepage/tree/main/docs/widgets/services/gotify.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/gethomepage/homepage/tree/main/docs/widgets/services/netdata.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -4783,14 +4783,12 @@
   
 
 
-  <h1>Gotify</h1>
+  <h1>Netdata</h1>
 
-<p>Get a Gotify client token from an existing client or create a new one on your Gotify admin page.</p>
-<p>Allowed fields: <code>["apps", "clients", "messages"]</code>.</p>
+<p>Allowed fields: <code>["warnings", "criticals"]</code>.</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">widget</span><span class="p">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gotify</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://gotify.host.or.ip</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">clientoken</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Netdata</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://netdata.host.or.ip</span>
 </span></code></pre></div>
 
 
