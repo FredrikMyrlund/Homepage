@@ -4844,10 +4844,13 @@
   <h1>HDHomerun</h1>
 
 <p>Learn more about <a href="https://www.silicondust.com/support/downloads/">HDHomerun</a>.</p>
-<p>Allowed fields: <code>["channels", "hd"]</code>.</p>
+<p>Allowed fields: <code>["channels", "hd", "tunerCount", "channelNumber", "channelNetwork", "signalStrength", "signalQuality", "symbolQuality", "networkRate", "clientIP" ]</code>.</p>
+<p>If more than 4 fields are provided, only the first 4 are displayed.</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">widget</span><span class="p">:</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hdhomerun</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://hdhomerun.host.or.ip</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">tuner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w"> </span><span class="c1"># optional - defaults to 0, used for tuner-specific fields</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">fields</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;channels&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;hd&quot;</span><span class="p p-Indicator">]</span><span class="w"> </span><span class="c1"># optional - default fields shown</span>
 </span></code></pre></div>
 
 
