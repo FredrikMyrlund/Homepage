@@ -4847,7 +4847,8 @@
 <p><em>(Find the Unifi Controller information widget <a href="../../info/unifi_controller/">here</a>)</em></p>
 <p>You can display general connectivity status from your Unifi (Network) Controller. When authenticating you will want to use an account that has at least read privileges.</p>
 <p>An optional 'site' parameter can be supplied, if it is not the widget will use the default site for the controller.</p>
-<p>Allowed fields: <code>["uptime", "wan", "lan_users", "wlan_users"]</code>.</p>
+<p>Allowed fields: <code>["uptime", "wan", "lan", "lan_users", "lan_devices", "wlan", "wlan_users", "wlan_devices"]</code> (maximum of four).</p>
+<p>Note that fields unsupported by the unifi device will not be shown.</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">widget</span><span class="p">:</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unifi</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://unifi.host.or.ip:port</span>
