@@ -5883,12 +5883,14 @@ More information about prefixed icons can be found in <a href="../services/#icon
 <ul>
 <li><code>searchDescriptions</code>: which lets you control whether item descriptions are included in searches. This is off by default. When enabled, results that match the item name will be placed above those that only match the description.</li>
 <li><code>hideInternetSearch</code>: disable automatically including the currently-selected web search (e.g. from the widget) as a Quick Launch option. This is false by default, enabling the feature.</li>
+<li><code>showSearchSuggestions</code>: shows search suggestions for the internet search. This value will be inherited from the search widget if it is not specified. If it is not specified there either, it will default to false.</li>
 <li><code>hideVisitURL</code>: disable detecting and offering an option to open URLs. This is false by default, enabling the feature.</li>
 </ul>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="nt">quicklaunch</span><span class="p">:</span>
 </span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="w">  </span><span class="nt">searchDescriptions</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="w">  </span><span class="nt">hideInternetSearch</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="w">  </span><span class="nt">hideVisitURL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="w">  </span><span class="nt">showSearchSuggestions</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="w">  </span><span class="nt">hideVisitURL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </span></code></pre></div>
 <h2 id="homepage-version">Homepage Version</h2>
 <p>By default the release version is displayed at the bottom of the page. To hide this, use the <code>hideVersion</code> setting, like so:</p>
