@@ -419,7 +419,8 @@
         "search": "Search",
         "custom": "Custom",
         "visit": "Visit",
-        "url": "URL"
+        "url": "URL",
+        "searchsuggestion": "Suggestion"
     },
     "wmo": {
         "0-day": "Terik",
@@ -535,7 +536,15 @@
     },
     "hdhomerun": {
         "channels": "Saluran",
-        "hd": "HD"
+        "hd": "HD",
+        "tunerCount": "Tuners",
+        "channelNumber": "Channel",
+        "channelNetwork": "Network",
+        "signalStrength": "Strength",
+        "signalQuality": "Quality",
+        "symbolQuality": "Quality",
+        "networkRate": "Kadar bit",
+        "clientIP": "Client"
     },
     "scrutiny": {
         "passed": "Lulus",
@@ -694,6 +703,11 @@
         "targets_down": "Targets Down",
         "targets_total": "Total Targets"
     },
+    "gatus": {
+        "up": "Sites Up",
+        "down": "Sites Down",
+        "uptime": "Masa Hidup"
+    },
     "ghostfolio": {
         "gross_percent_today": "Today",
         "gross_percent_1y": "One year",
@@ -774,6 +788,14 @@
         "stopped": "Terhenti",
         "passed": "Lulus",
         "failed": "Gagal"
+    },
+    "openwrt": {
+        "uptime": "Masa Hidup",
+        "cpuLoad": "CPU Load Avg (5m)",
+        "up": "Up",
+        "down": "Down",
+        "bytesTx": "Transmitted",
+        "bytesRx": "Received"
     },
     "uptimerobot": {
         "status": "Status",

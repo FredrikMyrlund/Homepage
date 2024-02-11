@@ -419,7 +419,8 @@
         "search": "البحث",
         "custom": "مُخصّص",
         "visit": "زيارة",
-        "url": "الرابط"
+        "url": "الرابط",
+        "searchsuggestion": "Suggestion"
     },
     "wmo": {
         "0-day": "مشمس",
@@ -535,7 +536,15 @@
     },
     "hdhomerun": {
         "channels": "القنوات",
-        "hd": "جودة HD"
+        "hd": "جودة HD",
+        "tunerCount": "Tuners",
+        "channelNumber": "Channel",
+        "channelNetwork": "Network",
+        "signalStrength": "Strength",
+        "signalQuality": "Quality",
+        "symbolQuality": "Quality",
+        "networkRate": "معدل البت",
+        "clientIP": "Client"
     },
     "scrutiny": {
         "passed": "إجتاز",
@@ -694,6 +703,11 @@
         "targets_down": "الأهداف لا تعمل",
         "targets_total": "الأهداف الإجمالية"
     },
+    "gatus": {
+        "up": "المواقع تعمل",
+        "down": "مواقع لا تعمل",
+        "uptime": "مدة التشغيل"
+    },
     "ghostfolio": {
         "gross_percent_today": "اليوم",
         "gross_percent_1y": "سنة",
@@ -774,6 +788,14 @@
         "stopped": "متوقف",
         "passed": "إجتاز",
         "failed": "فشل"
+    },
+    "openwrt": {
+        "uptime": "مدة التشغيل",
+        "cpuLoad": "CPU Load Avg (5m)",
+        "up": "يعمل",
+        "down": "لا يعمل",
+        "bytesTx": "Transmitted",
+        "bytesRx": "تم الإستلام"
     },
     "uptimerobot": {
         "status": "الحالة",
